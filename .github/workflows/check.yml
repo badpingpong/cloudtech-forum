@@ -40,4 +40,4 @@ jobs:
 
       - name: check workflow name modified?
         run: |
-          bash -C "grep '^name: CI' .github/workflows/*.yml;test \${?} -eq 1"
+          bash -c "grep '^name: CI' .github/workflows/*.yml;test \${?} -eq 1"
